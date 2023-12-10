@@ -59,7 +59,6 @@ def generate_switch_table(count):
 
 def get_pixel(image, x, y):
     pixel = image.getpixel((x, y))
-    if pixel == 0: return 0
     return round(pixel/256*MAX)
 
 def generate_graph(file, image):
